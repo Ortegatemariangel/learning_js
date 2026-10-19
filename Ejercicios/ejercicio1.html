@@ -1,0 +1,16 @@
+<html lang="es">
+<head>
+    <title>Solicitar un dato y mostrarlo en un parrafo</title>
+    <script>
+        function mostrarDato()
+        {
+            dato = prompt("Escribe un dato:");
+            document.getElementById("parrafo").innerHTML = dato;
+        }
+    </script>
+</head>
+<body>
+    <button onclick="mostrarDato()">Ingresar dato</button>
+    <p id="parrafo"></p>
+</body>
+</html>

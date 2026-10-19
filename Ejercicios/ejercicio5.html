@@ -1,0 +1,29 @@
+<html lang="es">
+<head>
+    <title>Cambiar atributos al texto</title>
+    <script>
+        function cambiarTexto()
+        {
+            texto = document.getElementById("idTexto");
+            negrita = document.getElementById("idNegrita").value;
+            cursiva = document.getElementById("idCursiva").value;
+
+            texto.style.fontWeight = negrita;
+            texto.style.fontStyle = cursiva;
+        }
+    </script>
+</head>
+<body>
+    <p id="idTexto">Este es un texto de prueba.</p>
+
+    <select id="idNegrita" onchange="cambiarTexto()">
+        <option value="normal">Sin negrita</option>
+        <option value="bold">Negrita</option>
+    </select>
+
+    <select id="idCursiva" onchange="cambiarTexto()">
+        <option value="normal">Sin cursiva</option>
+        <option value="italic">Cursiva</option>
+    </select>
+</body>
+</html>

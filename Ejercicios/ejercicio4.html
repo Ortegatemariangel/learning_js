@@ -1,0 +1,23 @@
+<html lang="es">
+<head>
+    <title>Seleccionar y visualizar una imagen</title>
+    <script>
+        function mostrarImagen()
+        {
+            imagen = document.getElementById("idImagen").value;
+            document.getElementById("foto").src = "imagenes/" + imagen;
+        }
+    </script>
+</head>
+<body>
+    <select id="idImagen" onchange="mostrarImagen()">
+        <option value="gato.jpg">Gato</option>
+        <option value="perro.jpg">Perro</option>
+        <option value="flor.jpg">Flor</option>
+    </select>
+
+    <br><br>
+
+    <img id="foto" width="300">
+</body>
+</html>

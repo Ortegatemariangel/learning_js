@@ -1,0 +1,20 @@
+<html lang="es">
+<head>
+    <title>Mostrar color en la consola</title>
+    <script>
+        function mostrarColor()
+        {
+            color = document.getElementById("idColor").value;
+            console.log(color);
+        }
+    </script>
+</head>
+<body>
+    <select id="idColor" onchange="mostrarColor()">
+        <option value="Rojo">Rojo</option>
+        <option value="Azul">Azul</option>
+        <option value="Verde">Verde</option>
+        <option value="Amarillo">Amarillo</option>
+    </select>
+</body>
+</html>

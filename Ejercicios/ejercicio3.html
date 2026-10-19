@@ -1,0 +1,17 @@
+<html lang="es">
+<head>
+    <title>Mostrar un  texto en pantalla</title>
+    <script>
+        function mostrarTexto()
+        {
+            texto = document.getElementById("idTexto").value;
+            document.getElementById("idDiv").innerHTML = texto;
+        }
+    </script>
+</head>
+<body>
+    <input type="text" id="idTexto">
+    <button onclick="mostrarTexto()">Mostrar texto</button>
+    <div id="idDiv"></div>
+</body>
+</html>
